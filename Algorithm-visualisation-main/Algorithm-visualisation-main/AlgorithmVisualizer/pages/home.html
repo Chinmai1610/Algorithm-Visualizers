@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Algorithm Visualizer – Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Correct stylesheet paths -->
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/home.css">
+
+  <style>
+    body {
+      background: #f3f4f6;
+      font-family: "Poppins", sans-serif;
+    }
+    .home-container {
+      text-align: center;
+      margin-top: 60px;
+    }
+    .logo-img {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+    .app-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    .nav-button {
+      display: block;
+      width: 260px;
+      margin: 15px auto;
+      padding: 14px;
+      text-decoration: none;
+      color: white;
+      background: #2563eb;
+      border-radius: 10px;
+      font-size: 18px;
+      transition: 0.2s;
+    }
+    .nav-button:hover {
+      background: #1d4ed8;
+      transform: scale(1.03);
+    }
+    body {
+    opacity: 0;
+    animation: fadeHome 1.0s forwards ease-out;
+  }
+
+  @keyframes fadeHome {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  </style>
+</head>
+
+<body>
+
+  <div class="home-container">
+      <img src="../assets/logo.svg" class="logo-img" alt="Logo" />
+
+      <h1 class="app-title">Algorithm Visualizer</h1>
+
+      <a href="sorting.html" class="nav-button">Sorting Algorithms</a>
+      <a href="searching.html" class="nav-button">Searching Algorithms</a>
+  </div>
+
+  <!-- Correct path to app.js -->
+  <script type="module">
+    import { initCommon } from "../scripts/app.js";
+    initCommon({
+      logoPath: "../assets/logo.svg",
+      enableKeyboardShortcuts: false
+    });
+  </script>
+
+</body>
+</html>

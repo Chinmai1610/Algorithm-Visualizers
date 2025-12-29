@@ -1,0 +1,25 @@
+.header {
+  color: #11f041;
+}
+
+/* Hide custom input by default */
+#customArrayInput {
+  display: none;
+}
+
+.buttons-group button {
+  margin: 5px;
+}
+
+/* Container height for sorting chart */
+#sortingBarsContainer {
+  height: 380px;
+}
+.bars-container {
+  width: 100%;
+  min-height: 350px;
+  padding-bottom: 30px; /* space for numbers */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}

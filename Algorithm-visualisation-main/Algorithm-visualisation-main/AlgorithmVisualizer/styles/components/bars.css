@@ -1,0 +1,54 @@
+.av-bar {
+  width: 12px;
+  margin: 0 2px;
+  background: #3b82f6; /* blue default */
+  border-radius: 4px 4px 0 0;
+  transition: height 0.08s linear, background 0.08s linear;
+}
+
+/* Color states */
+.av-bar.blue {
+  background: #3b82f6;
+}
+
+.av-bar.orange {
+  background: #fb923c;
+}
+
+.av-bar.red {
+  background: #ef4444;
+}
+
+.av-bar.green {
+  background: #10b981;
+}
+.bar {
+  border-radius: 4px;
+  transition: height 0.25s ease, background 0.2s ease;
+}
+
+.bar span {
+  user-select: none;
+}
+.bars-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 4px;
+}
+.bar {
+  overflow: visible !important;   /* REQUIRED */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.bar span {
+  position: absolute;
+  bottom: -20px;
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+  user-select: none;
+}

@@ -1,0 +1,12 @@
+input[type="radio"] {
+  accent-color: #2563eb;
+  cursor: pointer;
+  margin: 0 6px;
+}
+
+input[type="number"] {
+  padding: 6px;
+  width: 70px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}

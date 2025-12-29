@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorting Visualizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/sorting.css">
+  <link rel="stylesheet" href="../styles/components/buttons.css">
+  <link rel="stylesheet" href="../styles/components/sliders.css">
+  <link rel="stylesheet" href="../styles/components/bars.css">
+</head>
+
+<body>
+
+  <a href="home.html" class="back-btn">← Back</a>
+
+  <div class="page-container">
+
+    <h2 class="header">Sorting Algorithm Visualizer</h2>
+
+    
+
+    <!-- CONTROL PANEL -->
+    <div class="controls-panel">
+
+      <!-- ARRAY TYPE -->
+      <div class="control-group">
+        <h4>Array Type</h4>
+        <label><input type="radio" name="arrayType" value="random" checked> Random</label>
+        <label><input type="radio" name="arrayType" value="custom"> Custom</label>
+        <label><input type="radio" name="arrayType" value="reverse"> Reverse</label>
+
+        <input type="text" id="customArrayInput" class="input-box" placeholder="10,20,30">
+        <label>Size: <input type="number" id="arraySize" value="30"></label>
+      </div>
+
+      <!-- ALGORITHM SELECT -->
+      <div class="control-group">
+        <h4>Algorithm</h4>
+        <select id="algorithmSelect">
+          <option value="bubble">Bubble Sort</option>
+          <option value="selection">Selection Sort</option>
+          <option value="insertion">Insertion Sort</option>
+          <option value="merge">Merge Sort</option>
+          <option value="quick">Quick Sort</option>
+        </select>
+      </div>
+
+      <!-- SPEED -->
+      <div class="control-group">
+        <h4>Speed</h4>
+        <label><input type="radio" name="speed" value="fullslow"> Slow</label>
+        <label><input type="radio" name="speed" value="medium" checked> Medium</label>
+        <label><input type="radio" name="speed" value="slow"> Fast</label>
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="buttons-group">
+        <button id="generateBtn">Generate</button>
+        <button id="playBtn">Play</button>
+        <button id="pauseBtn" disabled>Pause</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+
+    </div>
+<div id="statusBar" class="status-bar">Ready</div>
+    <!-- BARS -->
+    <div id="sortingBarsContainer" class="bars-container"></div>
+    <div id="statusBar"></div>
+<div id="complexityBar"></div>
+<div id="tipsBar"></div>
+
+  </div>
+
+  <!-- JS -->
+  <script type="module">
+    import { wireSortingUI } from "../scripts/sorting/sortingUI.js";
+    import { initCommon } from "../scripts/app.js";
+
+    initCommon({
+      logoPath: "../assets/logo.svg",
+      enableKeyboardShortcuts: true
+    });
+
+    wireSortingUI("#sortingBarsContainer");
+  </script>
+
+</body>
+</html>

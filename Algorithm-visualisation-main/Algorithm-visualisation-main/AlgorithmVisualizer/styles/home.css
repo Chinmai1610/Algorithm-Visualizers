@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-container {
+  text-align: center;
+}
+
+.logo-img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.app-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+}
+
+.nav-button {
+  display: block;
+  width: 260px;
+  margin: 15px auto;
+  padding: 14px;
+  background: #2563eb;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+
+.nav-button:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}

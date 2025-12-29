@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Searching Visualizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/searching.css">
+  <link rel="stylesheet" href="../styles/components/buttons.css">
+  <link rel="stylesheet" href="../styles/components/sliders.css">
+  <link rel="stylesheet" href="../styles/components/bars.css">
+</head>
+
+<body>
+ <!-- 🔙 BACK BUTTON -->
+  <a href="home.html" class="back-btn">← Back</a>
+  <div class="page-container">
+
+    <h2 class="header">Searching Algorithm Visualizer</h2>
+
+    
+
+    <div class="controls-panel">
+
+      <div class="control-group">
+        <h4>Array Type</h4>
+        <label><input type="radio" name="searchArrayType" value="random" checked> Random</label>
+        <label><input type="radio" name="searchArrayType" value="custom"> Custom</label>
+        <label><input type="radio" name="searchArrayType" value="reverse"> Reverse</label>
+
+        <input type="text" id="customSearchArrayInput" class="input-box" placeholder="4,7,1,9">
+        <label>Size: <input type="number" id="searchArraySize" value="30"></label>
+      </div>
+
+      <div class="control-group">
+        <h4>Algorithm</h4>
+        <select id="searchAlgorithmSelect">
+          <option value="linear">Linear Search</option>
+          <option value="binary">Binary Search</option>
+          <option value="jump">Jump Search</option>
+          <option value="interpolation">Interpolation Search</option>
+          <option value="exponential">Exponential Search</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <h4>Speed</h4>
+        <label><input type="radio" name="searchSpeed" value="fullslow"> Slow</label>
+        <label><input type="radio" name="searchSpeed" value="medium" checked> Medium</label>
+        <label><input type="radio" name="searchSpeed" value="slow"> Fast</label>
+      </div>
+
+      <div class="control-group">
+        <h4>Search Value</h4>
+        <input type="number" id="searchValue" class="input-box" placeholder="Enter number">
+      </div>
+
+      <div class="buttons-group">
+        <button id="generateSearchBtn">Generate</button>
+        <button id="searchBtn">Search</button>
+        <button id="pauseSearchBtn" >Pause</button>
+        <button id="resetSearchBtn">Reset</button>
+      </div>
+
+    </div>
+<div id="statusBar" class="status-bar">Ready</div>
+    <div id="searchingBarsContainer" class="bars-container"></div>
+<div id="statusBar"></div>
+<div id="complexityBar"></div>
+<div id="tipsBar"></div>
+
+  </div>
+
+  <script type="module">
+    import { wireSearchingUI } from "../scripts/searching/searchingUI.js";
+    import { initCommon } from "../scripts/app.js";
+
+    initCommon({
+      logoPath: "../assets/logo.svg",
+      enableKeyboardShortcuts: true
+    });
+
+    wireSearchingUI("#searchingBarsContainer");
+  </script>
+
+</body>
+</html>
