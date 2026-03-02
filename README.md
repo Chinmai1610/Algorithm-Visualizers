@@ -76,32 +76,4 @@ Visualizing **Linear Search**. The algorithm checks each element sequentially un
 
 ---
 
-## 🚀 How to Run the Project
 
-### ✅ Method 1: Live Demo (Hugging Face)
-
-You can access the live version of this project directly on Hugging Face Spaces:
-👉 **[Algorithm Visualizer Live](https://www.google.com/search?q=https://huggingface.co/spaces/Chinmai1610/Algorithm-Visualizer)**
-
-### ✅ Method 2: Local Run
-
-1. **Clone the Repo:**
-```bash
-git clone https://github.com/Chinmai1610/Algorithm-Visualizer.git
-
-```
-
-
-2. **Open Index:** Simply double-click the `index.html` file in your browser.
-
----
-
-## 📂 Project Structure
-
-```text
-├── index.html          # Main landing page
-├── style.css           # UI styling and bar animations
-├── script.js           # Main logic & algorithm implementations
-└── README.md           # Project documentation
-
-```
