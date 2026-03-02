@@ -23,11 +23,15 @@ The entry point allows users to toggle between the **Sorting** and **Searching**
 
 Visualizing **Bubble Sort**. Watch as the largest elements "bubble" to the top through adjacent swaps.
 
-Color,Meaning,Context
-Blue 🔵,Default/Unsorted,Elements that haven't been finalized yet.
-Purple/Orange 🟣,Comparison,Elements currently being compared against each other.
-Red 🔴,Swapping,Elements actively changing positions in the array.
-Green 🟢,Sorted/Found,Elements in their final position or a search target that was found.
+Color-->Meaning-->Context
+
+Blue 🔵-->Default/Unsorted-->Elements that haven't been finalized yet.
+
+Purple/Orange 🟣-->Comparison-->Elements currently being compared against each other.
+
+Red 🔴-->Swapping-->Elements actively changing positions in the array.
+
+Green 🟢-->Sorted/Found-->Elements in their final position or a search target that was found.
 
 <img width="1858" height="779" alt="Screenshot 2026-03-02 194825" src="https://github.com/user-attachments/assets/e75dd68b-2d5a-4718-a248-7b75ec820075" />
 
