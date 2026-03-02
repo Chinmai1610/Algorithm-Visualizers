@@ -47,7 +47,6 @@ Visualizing **Linear Search**. The algorithm checks each element sequentially un
 
 
 ---
-<img width="1920" height="1008" alt="Screenshot 2026-03-02 195028" src="https://github.com/user-attachments/assets/f79ae78b-4105-438c-8e5f-e1e2ee72f863" />
 
 <img width="1920" height="1008" alt="Screenshot 2026-03-02 195204" src="https://github.com/user-attachments/assets/3b587d94-871d-4156-b275-309b71f82a81" />
 
